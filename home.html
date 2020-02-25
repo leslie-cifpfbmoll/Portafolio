@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="sass/style.css" media="screen,projection" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <script>
+        $(document).ready(function() {
+            $('.collapsible').collapsible();
+        });
+        $(document).ready(function() {
+            $('.modal').modal();
+        });
+        $(document).ready(function() {
+            $('.carousel').carousel();
+        });
+    </script>
+    <nav class="nav-extended">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">
+                Home</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="home.html">Home</a></li>
+                <!-- Modal Trigger -->
+                <li> <a class="modal-trigger" href="#modal1">Subscribe</a>
+                </li>
+                <li><a href="https://materializecss.com/">Materialize</a></li>
+            </ul>
+        </div>
+        <div class="nav-content">
+            <ul class="tabs tabs-transparent">
+                <li class="tab"><a class="active" href="index.html#test1">Diseño</a></li>
+                <li class="tab"><a href="index.html#test2">Cliente</a></li>
+                <li class="tab disabled"><a href="#test3">Disabled Tab</a></li>
+                <li class="tab disabled"><a href="#test4">Disabled Tab</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                            <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Last Name</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Password</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
+    <div class="container">
+        <h3>Diseño</h3>
+        <table>
+
+            <thead>
+
+                <tr>
+                    <th>Name</th>
+                    <th>Use</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>P2 - Web prototype</td>
+                    <td>CSS</td>
+                    <td><a href="#">P2</a></td>
+                </tr>
+                <tr>
+                    <td>P3 - Vegetable Gardening </td>
+                    <td> CSS Grid & Flexbox</td>
+                    <td><a href="#">P3</a></td>
+                </tr>
+                <tr>
+                    <td>P4 - Logitravel </td>
+                    <td>Form</td>
+                    <td><a href="#">P4</a></td>
+                </tr>
+                <tr>
+                    <td>P5 - individual</td>
+                    <td>Bootstrap 4</td>
+                    <td><a href="#">P5</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="carousel">
+            <a class="carousel-item" href="#one!"><img src="img/css.png"></a>
+            <a class="carousel-item" href="#two!"><img src="img/bootstrap.png"></a>
+            <a class="carousel-item" href="#three!"><img src="img/grid.png"></a>
+            <a class="carousel-item" href="#four!"><img src="img/form.png"></a>
+        </div>
+        <h3>Cliente</h3>
+        <table class="striped">
+            <thead>
+
+                <tr>
+                    <th>Name</th>
+                    <th>Use</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Pc2 - Memory Game</td>
+                    <td>DOM</td>
+                    <td><a href="#">Pc2</a></td>
+                </tr>
+                <tr>
+                    <td>Pc3 - Fosser
+                    </td>
+                    <td>Canvas</td>
+                    <td><a href="#">Pc3</a></td>
+                </tr>
+                <tr>
+                    <td>Pc4 - Weather Map</td>
+                    <td>Jquery Ajax</td>
+                    <td><a href="#">Pc4</a></td>
+                </tr>
+                <tr>
+                    <td>Pc5 - Shopping list</td>
+                    <td>Vue, Vue cli</td>
+                    <td><a href="#">Pc5</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="carousel">
+            <a class="carousel-item" href="#one!"><img src="img/dom.png"></a>
+            <a class="carousel-item" href="#two!"><img src="img/canvas.png"></a>
+            <a class="carousel-item" href="#three!"><img src="img/jquery.png"></a>
+            <a class="carousel-item" href="#four!"><img src="img/vue.png"></a>
+        </div>
+    </div>
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Materialize</h5>
+                    <p class="grey-text text-lighten-4">
+                        It is a personal portfolio page with some images or cards that represent the practices you created during the course and link these images to the repositories.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">Github</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Facebook</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2014 Copyright Text
+
+            </div>
+        </div>
+    </footer>
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
+</html>

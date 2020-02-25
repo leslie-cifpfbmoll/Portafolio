@@ -1,0 +1,19 @@
+@import 'materialize';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+body {
+    font-family: 'Open Sans';
+    .card {
+        width: 250px;
+    }
+}
+
+.nav-extended {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#test2 {
+    .material-icons {
+        color: #EE6E73;
+    }
+}
